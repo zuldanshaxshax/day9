@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.box1{
+    background-color: rgb(255, 166, 0);
+    width: 560px;
+    height: 100px;
+    border-radius: 50px;
+    border-right: 40px solid rgba(25, 25, 255, 0.543);
+    margin-top: 60px;
+}
+.box1 h1{
+    text-align: center;
+    padding-top: 25px;
+}
+span{
+    padding-left: 300px;
+
+}
+a{
+    text-decoration: none;
+    border: 1px solid black;
+}
+.about{
+    float: right;
+    font-size: 2em;
+    display: flex;
+    gap: 25px;
+}

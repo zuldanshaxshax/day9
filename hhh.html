@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul, li, a, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9fa;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .header-buttons button {
+            margin-left: 10px;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .header-buttons .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+
+        .header-buttons .btn-primary:hover {
+            background: #0056b3;
+        }
+
+        .header-buttons .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .header-buttons .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .services-section {
+            background: #f0f8ff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .service-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+
+        .service-card p {
+            color: #555;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-buttons button {
+                margin: 5px 0;
+            }
+
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <button class="btn-primary">Sign Up</button>
+            <button class="btn-secondary">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <h2>Our Features & Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <img style="width: 290px; height: 150px;" src="reading.jpeg" alt="Communications">
+                    <h3>Communications</h3>
+                    <p>Pretium lectus quam id leo in vitae turpis. Mattis pellentesque id nibh tortor id.</p>
+                </div>
+                <div class="service-card">
+                    <img  style="width: 290px; height: 150px;" src="women.jpeg" alt="Inspired Design">
+                    <h3>Inspired Design</h3>
+                    <p>Nunc consequat interdum varius sit amet mattis vulputate enim nulla. Risus feugiat.</p>
+                </div>
+                <div class="service-card">
+                    <img  style="width: 290px; height: 150px;" src="comp.jpeg" alt="Happy Customers">
+                    <h3>Happy Customers</h3>
+                    <p>Nisi purus in mollis nunc sed id semper. Rhoncus aenean vel elit scelerisque mauris.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Your Website Name. All Rights Reserved.
+    </footer>
+</body>
+</html>
